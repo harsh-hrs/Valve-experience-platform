@@ -1,0 +1,55 @@
+:root {
+  --bg-color: #0f172a;
+  --bg-color-lighter: #1e293b;
+  --text-color: #f8fafc;
+  --text-muted: #94a3b8;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --accent: #10b981;
+  --danger: #ef4444;
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden; /* Prevent scrolling, 3D canvas takes over */
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+p {
+  color: var(--text-muted);
+}
