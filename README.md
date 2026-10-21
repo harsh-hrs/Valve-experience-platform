@@ -1,16 +1,51 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Valve Experience Platform
 
-Currently, two official plugins are available:
+**The first prototype of [ValveHub](https://github.com/harsh-hrs/valve-knowledge-hub): exploring valve anatomy in interactive 3D.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![React](https://img.shields.io/badge/React_19-0B1120?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-0B1120?style=for-the-badge&logo=vite&logoColor=A78BFA)
+![Three.js](https://img.shields.io/badge/Three.js-0B1120?style=for-the-badge&logo=threedotjs&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router_7-0B1120?style=for-the-badge&logo=reactrouter&logoColor=F44250)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> [!NOTE]
+> This was an early experiment. Development continues in **[valve-knowledge-hub](https://github.com/harsh-hrs/valve-knowledge-hub)**. You can try it live at [valve-knowledge-hub.pages.dev](https://valve-knowledge-hub.pages.dev).
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Valve catalog:** pick a gate or globe valve to explore
+- **3D viewer:** orbit around each valve, with studio lighting and soft contact shadows
+- **Clickable parts:** select a component to see its function, material and common failure modes
+- **Exploded view:** pull the assembly apart to see how the parts fit together
+- **Operate mode:** watch the valve open and close
+
+## 🧱 Tech stack
+
+React 19 · Vite · React Router 7 · Three.js · React Three Fiber + Drei · Lucide icons
+
+## 🚀 Getting started
+
+```bash
+git clone https://github.com/harsh-hrs/Valve-experience-platform.git
+cd Valve-experience-platform
+npm install
+npm run dev
+```
+
+Then open the local URL that Vite prints (usually [http://localhost:5173](http://localhost:5173)).
+
+## 🗂️ Project structure
+
+```text
+src/
+├─ pages/        # Home, Catalog, ValveViewer
+├─ components/   # ValveModel, Sidebar, UIOverlay
+└─ data/         # valves.js: parts, materials and failure modes
+```
+
+## 👤 Author
+
+Created by **Harsh Raj Singh** ([@harsh-hrs](https://github.com/harsh-hrs)).
